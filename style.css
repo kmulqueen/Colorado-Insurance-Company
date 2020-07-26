@@ -145,6 +145,7 @@ header {
 }
 
 .ins-srv__btn {
+    display: inline-block;
     font-family: var(--font-bold);
     font-size: 1.8rem;
     text-transform: capitalize;
