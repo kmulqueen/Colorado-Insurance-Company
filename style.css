@@ -1,0 +1,241 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    --clr-blue-dark: #2F4858;
+    --clr-blue-light: #33658A;
+    --clr-white: #F3F8F2;
+    --clr-yellow: #F6AE2D;
+    --font-bold: 'Roboto', sans-serif;
+    --font-light: 'Catamaran', sans-serif;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.col {
+    width: 100%;
+}
+
+
+header {
+    background-color: var(--clr-blue-dark);
+}
+
+.nav {
+    padding: 2em;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-family: 'Catamaran', sans-serif;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 1.5rem;
+}
+
+.hero {
+    background-image: url("img/mountains\ and\ lake.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5em 0;
+
+}
+
+.hero__content {
+    width: 50%;
+}
+
+.hero__title {
+    font-size: 4.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--clr-white);
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.hero__title--accent {
+    color: var(--clr-blue-light);
+}
+
+.hero__text {
+    font-size: 2rem;
+    font-family: 'Catamaran', sans-serif;
+    color: var(--clr-white);
+    margin-bottom: 2em;
+}
+
+.hero__btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--clr-yellow);
+    color: var(--clr-white);
+    padding: .5em 1.5em;
+    border-radius: 100px;
+}
+
+.ins-srv {
+    padding: 3em 0;
+}
+
+.ins-srv__heading,
+.ins-promo__title {
+    font-family: var(--font-light);
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+}
+
+.ins-srv__item {
+    text-align: center;
+    margin-bottom: 3em;
+    border: solid 1px var(--clr-blue-dark);
+    padding: 2em;
+}
+
+.ins-srv__img-container {
+    margin: 2em 0;
+}
+
+.ins-srv__title {
+    font-family: var(--font-light);
+    font-size: 2rem;
+}
+
+.ins-srv__text {
+    font-family: var(--font-light);
+    font-size: 1.5rem;
+    margin: .5em 0;
+}
+
+.ins-srv__btn-container {
+    margin: 2em 0;
+}
+
+.ins-srv__btn {
+    font-family: var(--font-bold);
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: var(--clr-blue-light);
+    color: var(--clr-white);
+    padding: .35em 1em;
+    border-radius: 100px;
+}
+
+.contact {
+    background-color: var(--clr-yellow);
+    color: var(--clr-white);
+    font-family: var(--font-bold);
+    font-size: 2rem;
+
+    padding: 1em 0;
+}
+
+.contact__text {
+    margin-bottom: .75em;
+}
+
+.contact__btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr-white);
+    background-color: var(--clr-blue-light);
+
+    padding: .25em 1em;
+    border-radius: 100px;
+}
+
+.ins-promo {
+    padding: 2em 0;
+}
+
+.ins-promo__text {
+    font-family: var(--font-light);
+    font-size: 2rem;
+}
+
+.ins-promo__item {
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ins-promo__img {
+    margin: 1em 0;
+}
+
+.ins-promo__link {
+    font-family: var(--font-light);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+}
+
+footer {
+    background-color: var(--clr-blue-dark);
+    padding: 2em 0;
+}
+
+.footer__title {
+    color: var(--clr-yellow);
+    font-family: var(--font-bold);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: .5em 0;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-family: var(--font-light);
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin: .05em 0;
+}
+
+
+@media(min-width: 700px) {
+    .row {
+        flex-direction: row;
+    }
+
+}
